@@ -1,0 +1,173 @@
+/* =========================
+   Day 1: Reset Default Styles
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   Day 2: Typography & Colors
+========================= */
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --bg-color: #f4f6f8;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   Header Styling (Flexbox)
+========================= */
+
+header {
+    background: var(--secondary-color);
+    color: white;
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* =========================
+   Hero Section
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Hover + Animation */
+.btn:hover {
+    background: var(--accent-color);
+    transform: scale(1.05);
+}
+
+/* =========================
+   Day 3: Layout using Flexbox
+========================= */
+
+.projects {
+    padding: 40px;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/* Interactive Hover */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* =========================
+   Day 6: Forms Styling
+========================= */
+
+.contact {
+    padding: 40px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* =========================
+   Day 5: Responsive Design
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
